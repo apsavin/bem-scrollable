@@ -1,0 +1,15 @@
+.scroll_type_vertical {
+    position: absolute;
+    top: 5px;
+    right: 2px;
+    bottom: 5px;
+
+    width: 8px;
+}
+.scroll_type_vertical .scroll__thumb {
+    top: 0;
+    right: 0;
+    left: 0;
+
+    width: 8px;
+}

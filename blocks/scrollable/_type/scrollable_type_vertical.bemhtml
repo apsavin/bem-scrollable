@@ -1,0 +1,14 @@
+block('scrollable').mod('type', 'vertical')(
+
+    content()(function () {
+        return [
+            {
+                block: 'scroll',
+                mods: {
+                    type: 'vertical'
+                }
+            },
+            applyNext()
+        ];
+    })
+)

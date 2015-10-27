@@ -1,0 +1,9 @@
+({
+    shouldDeps: [
+        {
+            mods: {
+                horizontal: 'active'
+            }
+        }
+    ]
+})

@@ -1,0 +1,29 @@
+block('scrollable')(
+
+    def().match(function () {
+        return !(this.ctx.mods && this.ctx.mods.type);
+    })(function () {
+        var mods = this.ctx.mods || {};
+
+        this.ctx.mods = this._.extend(mods, {
+            type: 'vertical'
+        });
+
+        applyCtx(this.ctx);
+    }),
+
+    content()(function () {
+        return {
+            elem: 'viewport',
+            content: {
+                elem: 'systemscrolls',
+                content: {
+                    elem: 'content',
+                    content: this.ctx.content
+                }
+            }
+        };
+    }),
+
+    js()(true)
+)

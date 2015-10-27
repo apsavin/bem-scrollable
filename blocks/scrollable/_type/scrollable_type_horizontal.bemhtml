@@ -1,0 +1,14 @@
+block('scrollable').mod('type', 'horizontal')(
+
+    content()(function () {
+        return [
+            applyNext(),
+            {
+                block: 'scroll',
+                mods: {
+                    type: 'horizontal'
+                }
+            }
+        ];
+    })
+)

@@ -1,0 +1,9 @@
+.scrollable__systemscrolls {
+    overflow: hidden;
+
+    height: 100%;
+}
+/* hides native scrollbars into webkit */
+.scrollable__systemscrolls::-webkit-scrollbar {
+    display: none;
+}

@@ -1,0 +1,4 @@
+.scrollable__viewport {
+    box-sizing: border-box;
+    height: 100%;
+}

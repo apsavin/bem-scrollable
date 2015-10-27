@@ -1,0 +1,27 @@
+.scrollable {
+    position: relative;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+}
+
+.scrollable .scroll {
+    position: absolute;
+
+    display: none;
+}
+.scrollable .scroll_type_vertical {
+    top: 5px;
+    right: 2px;
+    bottom: 5px;
+
+    width: 8px;
+}
+.scrollable .scroll_type_horizontal {
+    right: 5px;
+    bottom: 2px;
+    left: 5px;
+
+    height: 8px;
+}

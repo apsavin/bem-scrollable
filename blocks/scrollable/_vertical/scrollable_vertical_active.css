@@ -1,0 +1,9 @@
+.scrollable_vertical_active .scrollable__viewport {
+    padding-right: 12px;
+}
+.scrollable_vertical_active .scroll_type_vertical {
+    display: block;
+}
+.scrollable_vertical_active .scroll_type_horizontal {
+    right: 17px;
+}

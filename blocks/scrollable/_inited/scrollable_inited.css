@@ -1,0 +1,41 @@
+/* включает нативную (браузерную) прокрутку */
+.scrollable_inited {
+    overflow: visible;
+}
+.scrollable_inited .scrollable__viewport,
+.scrollable_inited .scrollable__systemscrolls,
+.scrollable_inited .scrollable__content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: auto;
+    height: auto;
+}
+.scrollable_inited .scrollable__viewport {
+    clip: rect(0, auto, auto, 0); /* hides content outside the viewport */
+
+    padding: 0;
+}
+.scrollable_inited.scrollable_vertical_active .scrollable__viewport {
+    right: 12px;
+}
+.scrollable_inited.scrollable_horizontal_active .scrollable__viewport {
+    bottom: 12px;
+}
+.scrollable_inited.scrollable_vertical_active .scrollable__systemscrolls {
+    /* right: -(the width of the vertical scrollbar)px; defined by js */
+    overflow-y: scroll;
+}
+.scrollable_inited.scrollable_horizontal_active .scrollable__systemscrolls {
+    /* bottom: -(the height of the horizontal scrollbar)px; defined by js */
+    overflow-x: scroll;
+}
+.scrollable_inited.scrollable_vertical_active .scrollable__content {
+    bottom: auto;
+}
+.scrollable_inited.scrollable_horizontal_active .scrollable__content {
+    right: auto;
+}

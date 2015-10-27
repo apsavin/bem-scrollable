@@ -1,0 +1,11 @@
+/* helps js to get width of the system scrollbars */
+.scrollable__size-helper {
+    overflow: scroll;
+
+    width: 100px;
+    height: 100px;
+}
+/* hides native scrollbars into webkit */
+.scrollable__size-helper_scoll_switched-off::-webkit-scrollbar {
+    display: none;
+}
